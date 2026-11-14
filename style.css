@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 8px;
+    background: #fff;
+    color: #0e1636;
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    margin-bottom: 14px;
+    padding: 0 14px;
+    background: #d5e0d7;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0e1636;
+    text-decoration: none;
+}
+
+.logo__icon {
+    width: 44px;
+    height: 44px;
+}
+
+.logo__name {
+    font: 800 34px "Bricolage Grotesque", sans-serif;
+    letter-spacing: -0.04em;
+}
+
+.logo__sub {
+    align-self: flex-end;
+    padding-bottom: 12px;
+    font-size: 16px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-weight: 500;
+}
+
+.nav a {
+    font-size: 18px;
+    color: #0e1636;
+    text-decoration: none;
+}
+
+.nav a.active {
+    text-decoration: underline;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav .donate {
+    margin-left: 40px;
+    padding: 9px 44px;
+    border: 1px solid #0e1636;
+    border-radius: 30px;
+    transition: background 0.2s;
+}
+
+.nav .donate:hover {
+    background: #c4d3c7;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 6px 0;
+    background: #0e1636;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    min-height: calc(100vh - 100px);
+}
+
+.hero__left {
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    background: #c7d4c4 url("./assets/807e59f8-7259-48e6-b2e7-f08a1325e867") center / cover no-repeat;
+    border-radius: 12px;
+}
+
+.card {
+    width: 100%;
+    max-width: 440px;
+    padding: 50px 30px;
+    text-align: center;
+    background: #fbfbf7;
+    border: 1px dotted #555;
+    border-radius: 6px;
+}
+
+.card h1 {
+    margin: 0 0 30px;
+    font: 800 40px, 4.6vw,
+}
